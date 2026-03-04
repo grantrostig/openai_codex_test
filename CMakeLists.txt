@@ -9,6 +9,7 @@ find_package(xtd REQUIRED COMPONENTS forms drawing)
 
 add_executable(audio_to_text_xtd
   src/main.cpp
+  apps/winui_whisper_transcriber/CMakeLists.txt
 )
 target_link_libraries(audio_to_text_xtd PRIVATE xtd.forms xtd.drawing)
 
